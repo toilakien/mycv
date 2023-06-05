@@ -7,7 +7,7 @@ const Header = () => {
     <div className="w-container header">
       <div className="header-logo">
         <img src={logo} />
-        <div>kienlv.1704</div>
+        <div>kienlv</div>
       </div>
       <ul className="header-menu">
         <li>

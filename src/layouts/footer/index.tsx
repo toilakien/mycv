@@ -11,17 +11,18 @@ const Footer = () => {
         <div>
           <p style={{ display: "flex" }}>
             <img src={logo} />
-            <div>kienlv.1704</div>
+            &nbsp;
+            <div>kienlv</div>
           </p>
 
           <p>Web designer and front-end developer</p>
         </div>
         <div>
-          <h3>Media</h3>
+          <h3 style={{ textAlign: "center" }}>Media</h3>
           <div className="icon">
             <AiFillFacebook />
-            <AiFillLinkedin />
             <AiFillYahoo />
+            <AiFillLinkedin />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-head">
-        <div>
+        <div className="about-head-t">
           <h6>Who am i?</h6>
           <p>
             Hello, i’m Elias! I’m a self-taught front-end developer based in
@@ -31,14 +31,24 @@ const About = () => {
             <p>Css</p>
           </div>
           <div className="skill-item">
-            <h5>Languages</h5>
-            <p>Html</p>
-            <p>Css</p>
+            <h5>Other</h5>
+            <p>Html css js </p>
+            <p>Rest Jinja</p>
           </div>
           <div className="skill-item">
-            <h5>Languages</h5>
-            <p>Html</p>
-            <p>Css</p>
+            <h5>Tools</h5>
+            <p>VScode</p>
+            <p>Figma</p>
+            <p>Git</p>
+          </div>
+          <div className="skill-item">
+            <h5>Database</h5>
+            <p>SQLite Port</p>
+            <p>Mongo</p>
+          </div>
+          <div className="skill-item">
+            <h5>Frameword </h5>
+            <p>ReactJs</p>
           </div>
         </div>
       </div>

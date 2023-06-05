@@ -2,7 +2,7 @@
     font-family: 'Fira Code', monospace;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    color: #fff;
+    color: #ABB2BF;
 }
 .w-full{
     position: relative;
@@ -74,6 +74,42 @@
     cursor: pointer;
     
 }
+.home{
+    width: 100%;
+}
+.home-wrapper{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-left{
+    width: 50%;
+    h5,p{
+        span{
+            color: #c3559e;
+        }
+    }
+    button{
+       background-color: #272727;
+       border: 1px solid #c3559e;
+    }
+}
+.trick{
+    text-overflow: ellipsis;
+    text-align: center;
+    position: absolute;
+    background-color: #272727;
+    border: 1px solid #c3559e;
+    width: calc(408/1024*100vw);
+    height: 35px;
+    top: calc(325/1024*100vw);
+}
+.home-image{width: 50%;position: relative;}
+.home-image img{
+    width: 100%;
+    
+}
 .about{
     width: 100%;
     
@@ -81,20 +117,30 @@
 .about-head{
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+}
+.about-head-t:hover{
+    transform: scaleY(1.1);
+    transition: 3s all;
 }
 .about-image{
     img{
         width: calc(230/1024*100vw);
+    }:hover{
+        transform: scaleY(1.1);
+        transition: 3s all;
     }
 }
 .skill{
+
 }
 .skill-wrapper{
     display: flex;
-    
+    flex-wrap: wrap;
 }
 .skill-item{
     margin-left:10px ;
+    margin-bottom: 10px;
     padding: 0 10px;
     border: 1px solid #ddd;
     width: max-content;
@@ -118,6 +164,9 @@
             padding: 0;
             color: #fff;
         }
+        .icon svg{
+            padding: 0 5px;
+        }
         .icon svg:hover{
             color: #ddd;
             cursor: pointer;
@@ -131,11 +180,23 @@
         display: none;
     }
     .footer-head{
-display: block;
+        display: block;
+    }
+    .about-head{
+        display: block;
+    }
+    .home-wrapper{display: block;}
+    .home-left{
+        width: 100%;
+        
+    }
+    .home-image{width: 100%;position: relative;}
+    .trick{
+        display: none;
     }
   }
   @keyframes colorEffect{
-    0% {
+      0%  {
         color: #ddd;
       }
       50% {
