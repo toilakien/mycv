@@ -1,0 +1,147 @@
+*{
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+.w-full{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #272727;
+}
+.w-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.w-container{
+    width: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menu{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+        list-style: none;
+        padding: 0 calc(16/1024*100vw);
+        a{
+            color: #ABB2BF;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            span{
+                color: #C778DD;
+            }
+        }:active{
+            color: #fff;
+        }:hover{
+            color: #ddd;
+            transform: scaleX(1.3);
+            transition: 3s all;
+        }
+    }
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    div{
+        color: #fff;
+        margin-left: 12px;
+
+    }:hover{
+        animation: colorEffect 4s ease infinite;
+    }
+    img{
+        width: 24px;
+        height: 24px;
+    }
+}
+.header-logo:hover{
+    transform: scaleX(1.2);
+    transition: 3s all;
+    cursor: pointer;
+    
+}
+.about{
+    width: 100%;
+    
+}
+.about-head{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.about-image{
+    img{
+        width: calc(230/1024*100vw);
+    }
+}
+.skill{
+}
+.skill-wrapper{
+    display: flex;
+    
+}
+.skill-item{
+    margin-left:10px ;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    width: max-content;
+    h5,p{
+        margin: 0;
+    }
+}
+.footer{
+
+}
+.footer-head{
+    
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        
+        p,h3,div{
+            padding: 0;
+            color: #fff;
+        }
+        .icon svg:hover{
+            color: #ddd;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 1s all;
+        }
+    }
+}
+@media screen and (max-width: 896px) {
+    .header-menu{
+        display: none;
+    }
+    .footer-head{
+display: block;
+    }
+  }
+  @keyframes colorEffect{
+    0% {
+        color: #ddd;
+      }
+      50% {
+        color: #c3559e;
+      }
+      100% {
+        color: #cc1165;
+      }
+  }
