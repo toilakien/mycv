@@ -1,34 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo/logo.png";
 import { AiOutlineDown } from "react-icons/ai";
-import { Link } from "react-router-dom";
 const Header = () => {
+  const [y, setY] = useState(0);
+
+  window.addEventListener("scroll", function () {
+    setY(this.scrollY);
+  });
   return (
-    <div className="w-container header">
+    <div
+      className={
+        y >= 80 ? "w-container header header-fixed" : "w-container header"
+      }
+    >
       <div className="header-logo">
         <img src={logo} />
         <div>kienlv</div>
       </div>
       <ul className="header-menu">
         <li>
-          <Link to="/">
+          <a href="/#home">
             <span>#</span>home
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="">
+          <a href="#work">
             <span>#</span>work
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/about">
+          <a href="#about">
             <span>#</span>about-me
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="">
+          <a href="#contact">
             <span>#</span>contact
-          </Link>
+          </a>
         </li>
         <li>
           <a href="">

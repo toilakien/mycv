@@ -2,7 +2,7 @@ import React from "react";
 import person from "../../assets/images/about/person.png";
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="about-head">
         <div className="about-head-t">
           <h6>Who am i?</h6>

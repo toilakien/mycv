@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="w-container footer">
       <div className="footer-head">
-        <div>
+        <div style={{ position: "relative", left: "50px" }}>
           <p style={{ display: "flex" }}>
             <img src={logo} />
             &nbsp;
@@ -17,7 +17,7 @@ const Footer = () => {
 
           <p>Web designer and front-end developer</p>
         </div>
-        <div>
+        <div style={{ position: "relative", right: "50px" }}>
           <h3 style={{ textAlign: "center" }}>Media</h3>
           <div className="icon">
             <AiFillFacebook />
