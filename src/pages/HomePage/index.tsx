@@ -10,7 +10,9 @@ const HomePage = () => {
             <span>front-end developer</span>
           </h5>
           <p>I crafts responsive websites where technologies meet creativity</p>
-          <button>Contact me!!</button>
+          <button onClick={() => (window.location.href = "/#contact")}>
+            Contact me!!
+          </button>
         </div>
         <div className="home-image">
           <img src={pes} alt="" />
