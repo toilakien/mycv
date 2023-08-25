@@ -6,13 +6,15 @@ import Contact from "./pages/Contact";
 import Header from "./layouts/header";
 import Footer from "./layouts/footer";
 import Work from "./pages/Work";
+import Portfolio from "./pages/Portfolio";
 function App() {
   return (
     <div className="w-full">
       <Header />
       <HomePage />
       <About />
-      <Work />
+      {/* <Work /> */}
+      <Portfolio />
       <Contact />
       <Footer />
     </div>

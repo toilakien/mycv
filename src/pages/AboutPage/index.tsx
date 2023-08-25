@@ -1,5 +1,6 @@
 import React from "react";
-import person from "../../assets/images/about/person.png";
+import me2 from "../../assets/images/me-2.jpg";
+
 const About = () => {
   return (
     <div id="about" className="about">
@@ -17,7 +18,7 @@ const About = () => {
           </p>
         </div>
         <div className="about-image">
-          <img src={person} alt="" />
+          <img src={me2} alt="" />
         </div>
       </div>
       <div className="skill">

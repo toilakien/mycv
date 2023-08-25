@@ -1,11 +1,12 @@
 import React from "react";
-import images from "../../assets/images/home/pes.png";
+import me1 from "../../assets/images/me-1.jpg";
+
 const Contact = () => {
   return (
     <div id="contact" className="contact">
       <div className="contact-info">
         <h2>Contact</h2>
-        <img src={images} alt="" />
+        <img src={me1} alt="" />
       </div>
       <form className="contact-form">
         <input

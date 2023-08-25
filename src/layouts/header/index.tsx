@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/logo/logo.png";
-import { AiOutlineDown } from "react-icons/ai";
 const Header = () => {
   const [y, setY] = useState(0);
 
@@ -19,28 +18,22 @@ const Header = () => {
       </div>
       <ul className="header-menu">
         <li>
-          <a href="/#home">
-            <span>#</span>home
-          </a>
+          <a href="/#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#work">
-            <span>#</span>work
-          </a>
-        </li>
-        <li>
-          <a href="#about">
-            <span>#</span>about-me
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <span>#</span>contact
-          </a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
           <a href="">
-            EN <AiOutlineDown />
+            <button>Get a Quote</button>
           </a>
         </li>
       </ul>
