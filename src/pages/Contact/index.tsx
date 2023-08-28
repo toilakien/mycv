@@ -4,30 +4,36 @@ import me1 from "../../assets/images/me-1.jpg";
 const Contact = () => {
   return (
     <div id="contact" className="contact">
-      <div className="contact-info">
-        <h2>Contact</h2>
-        <img src={me1} alt="" />
-      </div>
-      <form className="contact-form">
-        <input
-          className="form-item-input"
-          placeholder="Enter your name"
-          type="text"
-        />
-        <input
-          className="form-item-input"
-          placeholder="Enter your phone number"
-          type="text"
-        />
-        <textarea
-          style={{ height: "300px" }}
-          className="form-item-input"
-          placeholder="Enter your message"
-        />
-        <div>
-          <button className="btn-submit">SUBMIT</button>
+      <div className="contact-content">
+        <div className="title">
+          <h1>Get a Quote</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione!
+          </p>
         </div>
-      </form>
+        <form className="form-contact" action="">
+          <select name="" id="">
+            <option>What is your project next?</option>
+            <option>Custom interface and layout</option>
+            <option>Website design</option>
+          </select>
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Company" />
+          <input type="text" placeholder="Phone Number" />
+          <textarea placeholder="Message" />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              borderTop: "1px solid #ddd",
+              paddingTop: "20px",
+            }}
+          >
+            <button className="button-send">Send a message</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

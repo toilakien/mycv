@@ -1,4 +1,6 @@
 import React from "react";
+import { AiOutlineEye } from "react-icons/ai";
+import { BiLink } from "react-icons/bi";
 
 const Portfolio = () => {
   return (
@@ -30,6 +32,14 @@ const Portfolio = () => {
               src="https://images.pexels.com/photos/8710945/pexels-photo-8710945.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt=""
             />
+            <div className="item-wrapp">
+              <button className="btn-icon">
+                <AiOutlineEye />
+              </button>
+              <button className="btn-icon">
+                <BiLink />
+              </button>
+            </div>
           </div>
           <div className="item">
             <img

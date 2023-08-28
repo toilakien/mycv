@@ -214,62 +214,51 @@ body{
 .contact{
     padding-top: 130px;
     padding-bottom: 130px;
+    position: relative;
+    background-color: $paper;
+    height: 100vh;
+    
+}
 
-width: 100%;
-display: flex;
-border-radius: 8px;
-background-color: $paper;
-}
-.contact-info{
+.contact-content{
+    padding: 20px;
+    position: absolute;
+    left:25%;
     width: 50%;
-    h2{
-        margin-top: 50px;
-        text-align: center;
-        color: #272727;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 2rem;
+    box-shadow: 0 7px 16px 0 rgba(35, 29, 29, 0.1);
+    .title{
+        h1,p{
+            text-align: center;
+        }
     }
-    img{
-        left:calc( 50% - 100px );
-        top:20%;
-        position: relative;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border: 5px solid $primary;
-        border-radius: 100%;
-    }
-}
-.btn-submit{
-    padding: 5px 20px;
-    color: #272727;
-    border: 5px double $primary;
-    position: relative;
-    left: 43%;
-    cursor: pointer;
-    &:hover{
-        background-color: $paper;
-        transform: scaleX(1.1);
-        transition-duration: 2s;
-        font-weight: 600;
+    .form-contact{
+        select,input,textarea{
+            width: 96%;
+            margin-top: 20px;
+            outline: none;
+            border-radius: 4px;
+            border:1px solid $primary;
+            opacity: 0.9;
+            padding: 5px 10px;
+
+        }:focus{
+            border:2px solid $primary;
+            opacity: 1;
+
+        }
+        
     }
 }
-.contact-form{
-    padding: 50px;
-    width: 50%;
-}
-.form-item-input{
-    margin-top: 20px;
-    position: relative;
+.button-send{
     border-radius: 8px;
-    width: 100%;
+    background-color: $primary;
+    border: none;
+    cursor: pointer;
+    color: $paper;
     padding: 5px 10px;
-    border: 2px solid #272727 ;
-    opacity: 0.7;
-    &:focus{
-        opacity: 1;
-    }
+    opacity: 0.9;
+}:active{
+    opacity: 1;
 }
 .skill{
     position: relative;
@@ -332,6 +321,8 @@ background-color: $paper;
     align-items: center;
     justify-content: center;
     .item{
+        cursor: pointer;
+        position: relative;
         margin: 10px;
         width: 20%;
         height: 400px;
@@ -339,7 +330,37 @@ background-color: $paper;
         img{
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit: fill;
+        }
+        .item-wrapp{
+            display: none;
+            // display: flex;
+            transition: 200ms ease-out;
+            position: absolute;
+            left: calc( 100% - 80px );
+            top: calc( 100% - 40px );
+            .btn-icon{
+            border: none;
+            cursor: pointer;
+            background: none;
+            opacity: 0.9;
+            z-index: 999;
+            svg{
+                color: $paper;
+            }
+        }:active{
+            opacity: 1;
+        }
+        }
+        &:hover{
+            .item-wrapp{
+                display: flex;
+            }
+            img{
+                object-fit: cover;
+                animation: object-fit 3s;
+            }
+           
         }
     }
 }
