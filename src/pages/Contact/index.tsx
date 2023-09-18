@@ -1,5 +1,4 @@
 import React from "react";
-import me1 from "../../assets/images/me-1.jpg";
 
 const Contact = () => {
   return (

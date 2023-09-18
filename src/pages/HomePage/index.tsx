@@ -5,12 +5,16 @@ const HomePage = () => {
     <div id="home" className="home">
       <div className="home-wrapper">
         <div className="home-left">
-          <h1>Kien Le</h1>
+          <h1 data-text="LV.KIEN . " className="text-animation w-[160px]">
+            LV.KIEN .
+          </h1>
           <h5>
             I'm is a <span>web designer</span> and{" "}
             <span>front-end developer</span>
           </h5>
-          <p>I crafts responsive websites where technologies meet creativity</p>
+          <p className="text-success text ">
+            I crafts responsive websites where technologies meet creativity
+          </p>
           <button onClick={() => (window.location.href = "/#contact")}>
             Contact me!!
           </button>

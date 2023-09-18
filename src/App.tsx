@@ -5,7 +5,6 @@ import About from "./pages/AboutPage";
 import Contact from "./pages/Contact";
 import Header from "./layouts/header";
 import Footer from "./layouts/footer";
-import Work from "./pages/Work";
 import Portfolio from "./pages/Portfolio";
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <Header />
       <HomePage />
       <About />
-      {/* <Work /> */}
       <Portfolio />
       <Contact />
       <Footer />

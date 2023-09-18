@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/images/logo/logo.png";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillYahoo } from "react-icons/ai";
@@ -10,8 +9,6 @@ const Footer = () => {
       <div className="footer-head">
         <div style={{ position: "relative", left: "50px" }}>
           <p style={{ display: "flex" }}>
-            <img src={logo} />
-            &nbsp;
             <div>kienlv</div>
           </p>
 
